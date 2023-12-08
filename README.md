@@ -1,3 +1,7 @@
-# shopbase-style
+# Hướng dẫn chạy
 
-# run gulp to mnifile css and js
+Chạy Gulp để mini file
+
+```
+gulp
+```
