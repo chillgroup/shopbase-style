@@ -1,0 +1,21 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # Điều chỉnh tên nhánh tương ứng
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Build and Deploy
+        run: |
+          # Điều chỉnh lệnh build và triển khai tại đây
+          cp -r ./path/to/your/css/directory ./your-deploy-directory
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
